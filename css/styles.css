@@ -133,7 +133,7 @@ body {
 }
 
 .header__btn {
-    padding: 5px 10px;
+    padding: 8px 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,6 +144,11 @@ body {
     font-size: 14px;
 }
 
+.header__btn.btn-call {
+    background-color: #00a53e;
+    color: #fff;
+}
+
 .header__btn>svg {
     width: 16px;
     height: 16px;
@@ -151,6 +156,10 @@ body {
 
 .header__btn:hover {
     background-color: whitesmoke;
+}
+
+.header__btn.btn-call:hover {
+    background-color: #008236;
 }
 
 .header__tabs {
@@ -232,20 +241,25 @@ body {
 /* обзор */
 .overview__wrapper {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     gap: 24px;
 }
 
-.overview__left,
-.overview__right {
+.overview__top,
+.overview__bottom {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 24px;
-    width: calc(100% - calc((100% - 24px * 2) / 3));
 }
 
-.overview__right {
+.overview__top .overview__card {
     width: calc((100% - 24px * 2) / 3);
+}
+
+.overview__bottom .overview__card {
+    width: calc((100% - 24px) / 2);
 }
 
 .overview__card {
@@ -275,12 +289,11 @@ body {
 .contacts__contacts {
     margin-bottom: 16px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 16px;
 }
 
 .contacts__contact {
-    width: calc((100% - 16px) / 2);
     display: flex;
     align-items: center;
     gap: 12px;
@@ -373,9 +386,7 @@ body {
     padding-top: 16px;
     border-top: 1px solid #e5e5e5;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 8px;
     font-size: 14px;
     color: #6f7886;
@@ -401,8 +412,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 32px;
-    height: 32px;
+    min-width: 48px;
+    height: 48px;
     background-color: #dbfce7;
     border-radius: 50%;
     overflow: hidden;
@@ -431,7 +442,7 @@ body {
 
 .manager__btn {
     margin-top: 16px;
-    padding: 5px 10px;
+    padding: 8px 12px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -483,7 +494,8 @@ body {
     top: 0;
     width: var(--value);
     height: 100%;
-    background-color: #000;
+    background-color: var(--color);
+    border-radius: 8px;
 }
 
 /* активность */
@@ -514,12 +526,6 @@ body {
     gap: 12px;
 }
 
-.activity__text {
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #364153;
-}
-
 .activity__values {
     display: flex;
     align-items: center;
@@ -530,15 +536,11 @@ body {
 .activity__value {
     padding: 2px 8px;
     width: fit-content;
-    background-color: #fff;
+    background-color: #f5f5f5;
     border-radius: 8px;
     border: 1px solid #e5e5e5;
     font-size: 12px;
     text-align: center;
-}
-
-.segments .activity__value {
-    background-color: #f5f5f5;
 }
 
 /* задачи */
@@ -549,11 +551,7 @@ body {
 }
 
 .tasks__card {
-    padding: 24px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 12px;
+    padding: 48px 24px;
     background-color: #fff;
     border: 1px solid #e5e5e5;
     border-radius: 16px;
@@ -566,64 +564,25 @@ body {
         0 2px 4px -2px #0000001a;
 }
 
-.tasks__info {
+.tasks__wrapper {
+    margin-bottom: 12px;
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
-}
-
-.tasks__block {
-    display: flex;
-    align-items: center;
+    justify-content: space-between;
     gap: 12px;
-}
-
-.tasks__block>svg {
-    width: 16px;
-    height: 16px;
-}
-
-.tasks__time,
-.tasks__event {
-    padding: 4px 8px;
-    width: fit-content;
-    border-radius: 8px;
-    font-size: 12px;
-    color: #fff;
-}
-
-.tasks__event {
-    padding: 3px 8px;
-    background-color: #fff;
-    border: 1px solid #e5e5e5;
-    color: #000;
 }
 
 .tasks__title {
     margin: 0;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.tasks__text {
+    margin: 0;
+    margin-bottom: 12px;
     font-size: 16px;
-}
-
-.tasks__client,
-.tasks__date,
-.tasks__name {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.tasks__date,
-.tasks__name {
-    gap: 4px;
-    font-size: 14px;
     color: #6f7886;
-}
-
-.tasks__date>svg,
-.tasks__name>svg {
-    width: 16px;
-    height: 16px;
 }
 
 .tasks__actions {
@@ -634,9 +593,71 @@ body {
 
 .tasks__btn {
     padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #e5e5e5;
     background-color: #fff;
     border-radius: 6px;
+    font-size: 14px;
+}
+
+.tasks__btn>svg {
+    width: 16px;
+    height: 16px;
+}
+
+.tasks__tags {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.tasks__tag {
+    padding: 2px 8px;
+    border: 1px solid #f5f5f5;
+    background-color: #fff;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.tasks__tag.red {
+    border-color: #ffc9c9;
+    background-color: #ffe2e2;
+    color: #9f0712;
+}
+
+.tasks__tag.blue {
+    border-color: #bedbff;
+    background-color: #dbeafe;
+    color: #193cb8;
+}
+
+.tasks__tag.gray {
+    border-color: #f5f5f5;
+    background-color: #f5f5f5;
+}
+
+.tasks__info {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tasks__block {
+    width: calc((100% - 12px * 3) / 4);
+}
+
+.tasks__key {
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #6f7886;
+}
+
+.tasks__value {
+    font-weight: bold;
     font-size: 14px;
 }
 
