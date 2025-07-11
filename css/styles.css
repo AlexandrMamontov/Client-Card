@@ -104,7 +104,7 @@ body {
 
 .header__name {
     margin: 0;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     font-weight: bold;
     font-size: 24px;
 }
@@ -1118,7 +1118,7 @@ body {
     padding-top: 16px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 36px;
     border-top: 1px solid #e5e5e5;
 }
 
@@ -1187,6 +1187,7 @@ body {
 }
 
 .whatsapp__settings {
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
     gap: 12px;

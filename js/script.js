@@ -22,4 +22,23 @@ document.addEventListener("DOMContentLoaded", function () {
         .classList.add("active");
     });
   });
+
+  // вкладка ватсап, отправление сообщений
+  const blocks = document.querySelectorAll(".whatsapp__block");
+  blocks.forEach((block) => {
+    const btns = block.querySelectorAll(".whatsapp__btn");
+    const textArea = block.querySelector(".whatsapp__input-text");
+    if (btns && textArea) {
+      btns.forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          const question = e.currentTarget.textContent.trim();
+          const currentText = textArea.value.split(" ").map((item) => item.trim());
+          if (!currentText.includes(question)) {
+            textArea.value += (textArea.value ? " " : "") + question;
+          }
+        });
+      });
+    }
+  });
 });
