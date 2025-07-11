@@ -13,89 +13,66 @@
 
 <body>
     <div id="root">
-        <div class="container">
-            <div class="header">
-                <div class="header__wrapper">
-                    <div class="header__info">
-                        <!-- аватарка, внутри вместо текста предусмотрено размещение картинки -->
-                        <div class="header__avatar">АВП</div>
-                        <div class="header__content">
-                            <h1 class="header__name">Анна Владимировна Петрова</h1>
-                            <div class="header__block">
-                                <div class="header__status">Потенциальный клиент</div>
-                                <div class="header__id">ID: CL-2024-15847</div>
-                                <div class="header__point">•</div>
-                                <div class="header__update">Обновлено: 2024-06-14 15:30</div>
-                            </div>
+        <div class="header">
+            <div class="header__wrapper">
+                <div class="header__info">
+                    <!-- аватарка, внутри вместо текста предусмотрено размещение картинки -->
+                    <div class="header__avatar">АВП</div>
+                    <div class="header__content">
+                        <h1 class="header__name">Анна Владимировна Петрова</h1>
+                        <div class="header__block">
+                            <div class="header__status">Потенциальный клиент</div>
+                            <div class="header__id">ID: CL-2024-15847</div>
+                            <div class="header__point">•</div>
+                            <div class="header__update">Обновлено: 2024-06-14 15:30</div>
                         </div>
                     </div>
-                    <div class="header__actions">
-                        <!-- кнопки с определённым предназначением -->
-                        <button class="header__btn btn-call">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M13 2a9 9 0 0 1 9 9"></path>
-                                <path d="M13 6a5 5 0 0 1 5 5"></path>
-                                <path
-                                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-                                </path>
-                            </svg>
-                            Позвонить
-                        </button>
-                        <button class="header__btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
-                            </svg>
-                            SMS
-                        </button>
-                        <button class="header__btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#000">
-                                <path
-                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L4 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
-                            </svg>
-                            WhatsApp
-                        </button>
-                        <button class="header__btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                                <path
-                                    d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z">
-                                </path>
-                            </svg>
-                            Редактировать
-                        </button>
-                        <!-- <button class="header__btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
-                            </svg>
-                        </button> -->
-                    </div>
                 </div>
-                <!-- вкладки для переключения активных окон -->
-                <div class="header__tabs">
-                    <button class="header__tab active" data-btn="overview">Обзор</button>
-                    <button class="header__tab" data-btn="tasks">Задачи</button>
-                    <button class="header__tab" data-btn="history">История</button>
-                    <button class="header__tab" data-btn="analytics">Аналитика</button>
-                    <button class="header__tab" data-btn="documents">Документы</button>
-                    <button class="header__tab" data-btn="intel-data">Развед. данные</button>
-                    <button class="header__tab" data-btn="kko">ККО</button>
-                    <button class="header__tab" data-btn="responsibility">Ответственность</button>
-                    <button class="header__tab" data-btn="contacting">Побудило обратиться</button>
-                    <button class="header__tab" data-btn="meeting">Встречи в офисе</button>
-                    <button class="header__tab" data-btn="whatsapp">WhatsApp</button>
+                <div class="header__actions">
+                    <!-- кнопки с определённым предназначением -->
+                    <button class="header__btn btn-call">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M13 2a9 9 0 0 1 9 9"></path>
+                            <path d="M13 6a5 5 0 0 1 5 5"></path>
+                            <path
+                                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
+                            </path>
+                        </svg>
+                        Позвонить
+                    </button>
+                    <button class="header__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                        </svg>
+                        SMS
+                    </button>
+                    <button class="header__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#000">
+                            <path
+                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L4 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                        </svg>
+                        WhatsApp
+                    </button>
                 </div>
             </div>
+            <!-- вкладки для переключения активных окон -->
+            <div class="header__tabs">
+                <button class="header__tab active" data-btn="overview">Обзор</button>
+                <button class="header__tab" data-btn="tasks">Задачи</button>
+                <button class="header__tab" data-btn="history">История</button>
+                <button class="header__tab" data-btn="analytics">Аналитика</button>
+                <button class="header__tab" data-btn="responsibility">Ответственность</button>
+                <button class="header__tab" data-btn="trigger">Триггер</button>
+                <button class="header__tab" data-btn="meeting">Встречи</button>
+                <button class="header__tab" data-btn="whatsapp">WhatsApp</button>
+                <button class="header__tab" data-btn="intel-data">Разведка</button>
+                <button class="header__tab" data-btn="kko">ККО</button>
+            </div>
+        </div>
 
+        <div class="container">
             <div class="main">
                 <!-- окна, переключаемые вкладками -->
                 <!-- обзор -->
@@ -246,13 +223,13 @@
                             <!-- источники трафика -->
                             <div class="overview__card traffic">
                                 <h2 class="overview__title">
-                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                                         <path d="M2 12h20"></path>
-                                    </svg> -->
+                                    </svg>
                                     Источники трафика
                                 </h2>
                                 <div class="traffic__cards">
@@ -274,12 +251,12 @@
                             <!-- коммерческие данные -->
                             <div class="overview__card data">
                                 <h2 class="overview__title">
-                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
                                         <line x1="12" x2="12" y1="2" y2="22"></line>
                                         <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                                    </svg> -->
+                                    </svg>
                                     Коммерческие данные
                                 </h2>
                                 <div class="data__cards">
@@ -312,13 +289,13 @@
                             <!-- активность -->
                             <div class="overview__card activity">
                                 <h2 class="overview__title">
-                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
                                         <path
                                             d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2">
                                         </path>
-                                    </svg> -->
+                                    </svg>
                                     Активность
                                 </h2>
                                 <div class="activity__wrapper">
@@ -347,13 +324,13 @@
                             <!-- теги -->
                             <div class="overview__card tags">
                                 <h2 class="overview__title">
-                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
                                         <path
                                             d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
                                         </path>
-                                    </svg> -->
+                                    </svg>
                                     Теги
                                 </h2>
                                 <div class="activity__wrapper">
@@ -1176,45 +1153,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- документы -->
-                <div class="main__wrapper documents" data-content="documents">
-                    <div class="main__block">
-                        <h2 class="main__title">Документы и файлы</h2>
-                        <div class="main__actions">
-                            <button class="main__btn custom">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
-                                    <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-                                    <path d="M10 9H8"></path>
-                                    <path d="M16 13H8"></path>
-                                    <path d="M16 17H8"></path>
-                                </svg>
-                                Загрузить документ
-                            </button>
-                        </div>
-                    </div>
-                    <div class="documents__wrapper">
-                        <div class="documents__card not-card">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="#99a1af" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
-                                <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-                                <path d="M10 9H8"></path>
-                                <path d="M16 13H8"></path>
-                                <path d="M16 17H8"></path>
-                            </svg>
-                            <div class="documents__text">Документы не найдены</div>
-                            <div class="documents__descr">Загрузите первый документ для этого клиента</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- развед. данные -->
-                <div class="main__wrapper intel-data" data-content="intel-data"></div>
-                <!-- кко -->
-                <div class="main__wrapper kko" data-content="kko"></div>
                 <!-- ответственность -->
                 <div class="main__wrapper responsibility" data-content="responsibility">
                     <div class="responsibility__wrapper">
@@ -1314,28 +1252,31 @@
                         </div>
                     </div>
                 </div>
-                <!-- побудило обратиться -->
-                <div class="main__wrapper contacting" data-content="contacting">
-                    <div class="contacting__wrapper">
-                        <h3 class="contacting__title">
+                <!-- триггер -->
+                <div class="main__wrapper trigger" data-content="trigger">
+                    <div class="trigger__wrapper">
+                        <h3 class="trigger__title">
                             Что побудило клиента обратиться в Данила-Мастер
                         </h3>
-                        <div class="contacting__cards">
-                            <div class="contacting__card">
-                                <div class="contacting__name">
+                        <div class="trigger__cards">
+                            <div class="trigger__card">
+                                <div class="trigger__name">
                                     Системная запись от 12.06.2024 10:30
                                 </div>
-                                <div class="contacting__text">
-                                    Клиента побудила обратиться в компанию за памятником <span>рекомендация хорошего знакомого</span>. По словам клиента, знакомый заказывал памятник в нашей компании год назад и остался очень доволен качеством работы и сервисом. Особенно отметил профессионализм менеджеров и точное соблюдение сроков изготовления.
+                                <div class="trigger__text">
+                                    Клиента побудила обратиться в компанию за памятником <span>рекомендация хорошего
+                                        знакомого</span>. По словам клиента, знакомый заказывал памятник в нашей
+                                    компании год назад и остался очень доволен качеством работы и сервисом. Особенно
+                                    отметил профессионализм менеджеров и точное соблюдение сроков изготовления.
                                 </div>
-                                <div class="contacting__descr">
+                                <div class="trigger__descr">
                                     Источник информации: первичный звонок клиента, зафиксировано call-центром
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- встреча в офисе -->
+                <!-- встречи -->
                 <div class="main__wrapper meetingxx" data-content="meeting">
                     <div class="main__block">
                         <h2 class="main__title">Встречи в офисе</h2>
@@ -1351,9 +1292,297 @@
                             </button>
                         </div>
                     </div>
+                    <div class="meeting__cards">
+                        <div class="meeting__card">
+                            <div class="meeting__wrapper">
+                                <div class="meeting__content">
+                                    <div class="meeting__info">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#2b7fff" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <line x1="12" x2="12" y1="8" y2="12"></line>
+                                            <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                                        </svg>
+                                        <div class="meeting__block">
+                                            <h3 class="meeting__title">Обсуждение проекта памятника</h3>
+                                            <div class="meeting__time">2024-06-20 в 14:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="meeting__status">Запланирована</div>
+                                </div>
+                                <div class="meeting__actions">
+                                    <button class="meeting__btn blue">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
+                                            <path
+                                                d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
+                                            </path>
+                                        </svg>
+                                        Отправить клиенту напоминание о встрече
+                                    </button>
+                                    <button class="meeting__btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7">
+                                            </path>
+                                            <path
+                                                d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z">
+                                            </path>
+                                        </svg>
+                                        Изменить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meeting__card">
+                            <div class="meeting__wrapper">
+                                <div class="meeting__content">
+                                    <div class="meeting__info">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#00c951" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                            <path d="m9 11 3 3L22 4"></path>
+                                        </svg>
+                                        <div class="meeting__block">
+                                            <h3 class="meeting__title">Первичная консультация</h3>
+                                            <div class="meeting__time">2024-05-15 в 11:30</div>
+                                        </div>
+                                    </div>
+                                    <div class="meeting__status green">Состоялась</div>
+                                </div>
+                                <div class="meeting__result">
+                                    <div class="meeting__key">
+                                        Результат встречи:
+                                    </div>
+                                    <div class="meeting__value">
+                                        Подписан договор на изготовление памятника на сумму 95,000 руб.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meeting__card">
+                            <div class="meeting__wrapper">
+                                <div class="meeting__content">
+                                    <div class="meeting__info">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#fb2c36" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="m15 9-6 6"></path>
+                                            <path d="m9 9 6 6"></path>
+                                        </svg>
+                                        <div class="meeting__block">
+                                            <h3 class="meeting__title">Выбор материалов</h3>
+                                            <div class="meeting__time">2024-04-28 в 16:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="meeting__status">Не состоялась</div>
+                                </div>
+                                <div class="meeting__result">
+                                    <div class="meeting__key">
+                                        Результат встречи:
+                                    </div>
+                                    <div class="meeting__value">
+                                        Клиент не пришел, перенесено на другую дату
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- ватсап -->
-                <div class="main__wrapper whatsapp" data-content="whatsapp"></div>
+                <div class="main__wrapper whatsapp" data-content="whatsapp">
+                    <div class="whatsapp__wrapper">
+                        <h3 class="whatsapp__title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#00a63e" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            Переписка в WhatsApp
+                        </h3>
+                        <div class="whatsapp__chat">
+                            <div class="whatsapp__manager">
+                                <p class="whatsapp__text">
+                                    Добрый день, Анна Владимировна! Напоминаю о нашей встрече завтра в 14:00. Подготовил
+                                    несколько вариантов памятников для обсуждения.
+                                </p>
+                                <div class="whatsapp__status">
+                                    <div class="whatsapp__date">2024-06-14 14:30</div>
+                                    <div class="whatsapp__check">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#155dfc" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 6 7 17l-5-5"></path>
+                                            <path d="m22 10-7.5 7.5L13 16"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="whatsapp__client">
+                                <p class="whatsapp__text">
+                                    Здравствуйте! Да, помню. Буду обязательно. Можно ли посмотреть варианты из черного
+                                    гранита?
+                                </p>
+                                <div class="whatsapp__status">
+                                    <div class="whatsapp__date">2024-06-14 14:45</div>
+                                </div>
+                            </div>
+                            <div class="whatsapp__manager">
+                                <p class="whatsapp__text">
+                                    Конечно! У нас есть отличные варианты из карельского и китайского черного гранита.
+                                    Покажу образцы и расскажу о различиях.
+                                </p>
+                                <div class="whatsapp__status">
+                                    <div class="whatsapp__date">2024-06-14 14:50</div>
+                                    <div class="whatsapp__check">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#155dfc" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 6 7 17l-5-5"></path>
+                                            <path d="m22 10-7.5 7.5L13 16"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="whatsapp__client">
+                                <p class="whatsapp__text">
+                                    Отлично! А можно ли будет сделать гравировку портрета?
+                                </p>
+                                <div class="whatsapp__status">
+                                    <div class="whatsapp__date">2024-06-14 15:10</div>
+                                </div>
+                            </div>
+                            <div class="whatsapp__manager">
+                                <p class="whatsapp__text">
+                                    Да, у нас есть несколько технологий: лазерная гравировка и фотокерамика. Завтра
+                                    покажу примеры работ и обсудим, что больше подойдет.
+                                </p>
+                                <div class="whatsapp__status">
+                                    <div class="whatsapp__date">2024-06-14 15:15</div>
+                                    <div class="whatsapp__check">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#155dfc" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 6 7 17l-5-5"></path>
+                                            <path d="m22 10-7.5 7.5L13 16"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="whatsapp__client">
+                                <p class="whatsapp__text">
+                                    Спасибо! До встречи завтра 👍
+                                </p>
+                                <div class="whatsapp__status">
+                                    <div class="whatsapp__date">2024-06-15 16:30</div>
+                                </div>
+                            </div>
+                            <div class="whatsapp__manager">
+                                <p class="whatsapp__text">
+                                    Добрый день, Анна Владимировна! Напоминаю о нашей встрече сегодня в 16:30.
+                                    Подготовил примеры работ с лазерной гравирокой портрета и фотокерамики.
+                                </p>
+                                <div class="whatsapp__status">
+                                    <div class="whatsapp__date">2024-06-14 14:30</div>
+                                    <div class="whatsapp__check">
+                                        <span>
+                                            Будет отправлено
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2">
+                                                </circle>
+                                                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="whatsapp__actions">
+                            <div class="whatsapp__block">
+                                <form action="#" class="whatsapp__form">
+                                    <input id="whatsapp-1" type="text" placeholder="Введите сообщение..."
+                                        class="whatsapp__input-text">
+                                    <button class="whatsapp__submit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
+                                            </path>
+                                            <path d="m21.854 2.147-10.94 10.939"></path>
+                                        </svg>
+                                    </button>
+                                </form>
+                                <div class="whatsapp__btns">
+                                    <button class="whatsapp__btn">Приглашение посетить офис</button>
+                                    <button class="whatsapp__btn">Контактные данные офиса</button>
+                                    <button class="whatsapp__btn">График работы офиса</button>
+                                    <button class="whatsapp__btn">Информация о фотокерамике</button>
+                                    <button class="whatsapp__btn">Примеры фотопортретов</button>
+                                    <button class="whatsapp__btn">Подборка вазы</button>
+                                    <button class="whatsapp__btn">Подборки памятников из чёрного гранита</button>
+                                    <button class="whatsapp__btn">Подборки памятников из серого гранита</button>
+                                    <button class="whatsapp__btn">Подборки памятников из цветного гранита</button>
+                                    <button class="whatsapp__btn">Подборки памятников в виде креста</button>
+                                </div>
+                            </div>
+                            <div class="whatsapp__block">
+                                <h3 class="whatsapp__subtitle">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"></circle>
+                                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round"></path>
+                                    </svg>
+                                    Отложенное сообщение
+                                </h3>
+                                <form action="#" class="whatsapp__form">
+                                    <input id="whatsapp-2" type="text" placeholder="Введите сообщение..."
+                                        class="whatsapp__input-text">
+                                    <button class="whatsapp__submit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
+                                            </path>
+                                            <path d="m21.854 2.147-10.94 10.939"></path>
+                                        </svg>
+                                    </button>
+                                </form>
+                                <div class="whatsapp__settings">
+                                    <span>Отправить в</span>
+                                    <input type="time">время
+                                    <input type="date">дата
+                                </div>
+                                <div class="whatsapp__btns">
+                                    <button class="whatsapp__btn">Приглашение посетить офис</button>
+                                    <button class="whatsapp__btn">Контактные данные офиса</button>
+                                    <button class="whatsapp__btn">График работы офиса</button>
+                                    <button class="whatsapp__btn">Информация о фотокерамике</button>
+                                    <button class="whatsapp__btn">Примеры фотопортретов</button>
+                                    <button class="whatsapp__btn">Подборка вазы</button>
+                                    <button class="whatsapp__btn">Подборки памятников из чёрного гранита</button>
+                                    <button class="whatsapp__btn">Подборки памятников из серого гранита</button>
+                                    <button class="whatsapp__btn">Подборки памятников из цветного гранита</button>
+                                    <button class="whatsapp__btn">Подборки памятников в виде креста</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- разведка -->
+                <div class="main__wrapper intel-data" data-content="intel-data"></div>
+                <!-- кко -->
+                <div class="main__wrapper kko" data-content="kko"></div>
             </div>
         </div>
     </div>

@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // переключение между вкладками
   let tabsBtn = document.querySelectorAll(".header__tab");
   let tabsBlocks = document.querySelectorAll(".main__wrapper");
 
@@ -16,7 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
         element.classList.remove("active");
       });
 
-      document.querySelector(`[data-content="${path}"]`).classList.add("active");
+      document
+        .querySelector(`[data-content="${path}"]`)
+        .classList.add("active");
     });
   });
 });
