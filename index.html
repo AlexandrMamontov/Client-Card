@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="css/media.css">
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="js/script.js"></script>
-    <script defer src="js/calendar.js"></script>
-    <script defer src="js/timepicker.js"></script>
+    <!-- <script defer src="js/calendar.js"></script> -->
+    <!-- <script defer src="js/timepicker.js"></script> -->
 
 </head>
 
@@ -1568,32 +1568,16 @@
                                     </button>
                                 </form>
                                 <div class="whatsapp__settings">
-                                    <span>Отправить в</span>
-                                    <div class="whatsapp__date-block time">
-                                        <div class="whatsapp__timepicker timepicker active">
-                                            <div class="timepicker__container hours swiper-container">
-                                                <div class="swiper-wrapper">
-                                                    <div class="swiper-slide">00</div>
-                                                    <div class="swiper-slide">01</div>
-                                                    <div class="swiper-slide">02</div>
-                                                    ...
-                                                    <div class="swiper-slide">23</div>
-                                                </div>
-                                            </div>
-                                            <div class="timepicker__container minutes swiper-container">
-                                                <div class="swiper-wrapper">
-                                                    <div class="swiper-slide">00</div>
-                                                    <div class="swiper-slide">01</div>
-                                                    <div class="swiper-slide">02</div>
-                                                    ...
-                                                    <div class="swiper-slide">59</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button id="time-btn">Время</button>
-                                        <input type="hidden" id="time-input" value="">
+                                    <span>Отправить</span>
+                                    <div class="whatsapp__date-block date">
+                                        <!-- <button id="date-btn">Дата</button> -->
+                                        <input type="date" id="date-input" value="">
                                     </div>
-                                    <div class="whatsapp__date-block date"></div>
+                                    <span>в</span>
+                                    <div class="whatsapp__date-block time">
+                                        <!-- <button id="time-btn">Время</button> -->
+                                        <input type="time" id="time-input" value="">
+                                    </div>
                                 </div>
                                 <div class="whatsapp__btns">
                                     <button class="whatsapp__btn">Приглашение&nbsp;посетить&nbsp;офис</button>

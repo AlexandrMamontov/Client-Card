@@ -45,6 +45,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
+  
+  // чат должен быть проскроллен вниз
+  document.querySelector(".whatsapp__chat").scrollTop = document.querySelector(".whatsapp__chat").scrollHeight;
+
+
 
   // логика блокировки кнопки для отложенных сообщений
   const delayedBlock = document.querySelector(".whatsapp__block.delayed-block");

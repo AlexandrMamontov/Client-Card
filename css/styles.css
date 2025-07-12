@@ -1194,6 +1194,10 @@ body {
     gap: 12px;
 }
 
+.whatsapp__settings span {
+    font-weight: bold;
+}
+
 .whatsapp__date-block {
     position: relative;
 }
