@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Карточка клиента</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="js/script.js"></script>
+    <script defer src="js/calendar.js"></script>
+    <script defer src="js/timepicker.js"></script>
+
 </head>
 
 <body>
@@ -59,14 +64,14 @@
             </div>
             <!-- вкладки для переключения активных окон -->
             <div class="header__tabs">
-                <button class="header__tab active" data-btn="overview">Обзор</button>
+                <button class="header__tab" data-btn="overview">Обзор</button>
                 <button class="header__tab" data-btn="tasks">Задачи</button>
                 <button class="header__tab" data-btn="history">История</button>
                 <button class="header__tab" data-btn="analytics">Аналитика</button>
                 <button class="header__tab" data-btn="responsibility">Ответственность</button>
                 <button class="header__tab" data-btn="trigger">Триггер</button>
                 <button class="header__tab" data-btn="meeting">Встречи</button>
-                <button class="header__tab" data-btn="whatsapp">WhatsApp</button>
+                <button class="header__tab active" data-btn="whatsapp">WhatsApp</button>
                 <button class="header__tab" data-btn="intel-data">Разведка</button>
                 <button class="header__tab" data-btn="kko">ККО</button>
             </div>
@@ -75,7 +80,7 @@
         <div class="main">
             <!-- окна, переключаемые вкладками -->
             <!-- обзор -->
-            <div class="main__wrapper overview active" data-content="overview">
+            <div class="main__wrapper overview" data-content="overview">
                 <div class="overview__wrapper">
                     <div class="overview__top">
                         <!-- контактная информация -->
@@ -1396,7 +1401,7 @@
                     </div>
                 </div>
                 <!-- ватсап -->
-                <div class="main__wrapper whatsapp" data-content="whatsapp">
+                <div class="main__wrapper whatsapp active" data-content="whatsapp">
                     <div class="whatsapp__wrapper">
                         <h3 class="whatsapp__title">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -1564,8 +1569,31 @@
                                 </form>
                                 <div class="whatsapp__settings">
                                     <span>Отправить в</span>
-                                    <input type="time">время
-                                    <input type="date">дата
+                                    <div class="whatsapp__date-block time">
+                                        <div class="whatsapp__timepicker timepicker active">
+                                            <div class="timepicker__container hours swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">00</div>
+                                                    <div class="swiper-slide">01</div>
+                                                    <div class="swiper-slide">02</div>
+                                                    ...
+                                                    <div class="swiper-slide">23</div>
+                                                </div>
+                                            </div>
+                                            <div class="timepicker__container minutes swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">00</div>
+                                                    <div class="swiper-slide">01</div>
+                                                    <div class="swiper-slide">02</div>
+                                                    ...
+                                                    <div class="swiper-slide">59</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button id="time-btn">Время</button>
+                                        <input type="hidden" id="time-input" value="">
+                                    </div>
+                                    <div class="whatsapp__date-block date"></div>
                                 </div>
                                 <div class="whatsapp__btns">
                                     <button class="whatsapp__btn">Приглашение&nbsp;посетить&nbsp;офис</button>
